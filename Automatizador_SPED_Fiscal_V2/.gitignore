@@ -1,0 +1,12 @@
+__pycache__/
+logs/
+dados/
+temporarios/
+saida/
+*.sqlite3
+*.sqlite3-journal
+empacotamento/build_*/
+empacotamento/fornecedores/
+empacotamento/perfil_limpo/
+entrega/*.exe
+recursos/java/*.dll

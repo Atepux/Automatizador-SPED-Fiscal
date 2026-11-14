@@ -1,0 +1,55 @@
+{
+  "origem": "Automatizador_SPED_Fiscal_V1",
+  "antes": {
+    "sha256_agregado": "7a0c2cecce391b936178b77d52e577e67b57fc5fe0d560066da7652a50de5c35",
+    "quantidade_arquivos": 221
+  },
+  "componentes_copiados": [
+    {
+      "arquivo": "scripts/ativar_operacoes_proprias.py",
+      "sha256": "b3f23d6f267fd33983acd5876b81b243370c7de6ced52c236c94ebb582f1aa72"
+    },
+    {
+      "arquivo": "scripts/concluir_pdf_fisico.py",
+      "sha256": "4f272d015c73facc0170340cfa9c85736f456b1212aa537e8c6781f0b44b6b20"
+    },
+    {
+      "arquivo": "scripts/janelas_recibo.py",
+      "sha256": "b6bcfa805eae41f52c29c6c24b6c6e1c9d005c545a68ef8a5f1971804b2d0a97"
+    },
+    {
+      "arquivo": "scripts/modal_concorrente.py",
+      "sha256": "d7fd455d952986e4ae5045dcc66a402d9503a225365e284756b0bda5ab9b4d06"
+    },
+    {
+      "arquivo": "scripts/navegacao_arvore.py",
+      "sha256": "b4a9e44bce7226d599a7460908c6833d41e5204ce6315e8b72a12e855a80daff"
+    },
+    {
+      "arquivo": "scripts/poc_ponta_a_ponta.py",
+      "sha256": "b3f09e80818889f42eff49d4f01246ae638c34dfd28053dc0164db29bf48aef4"
+    },
+    {
+      "arquivo": "scripts/preparar_salvar_fisico.py",
+      "sha256": "1896bcca7c8d2d5e137736438ec7fa374076a8d05e571c15bbfd081b5b8704ef"
+    },
+    {
+      "arquivo": "scripts/subrelatorios.py",
+      "sha256": "b1a86200d888cff886a8bd1fb164e4d463543929cdf3006b8a1268797b9507f5"
+    },
+    {
+      "arquivo": "scripts/testar_salvar_fisico.py",
+      "sha256": "cd6adee78f34610e864e75b19834d815a59c3791c259e394a0a8c4b44d6b1b5a"
+    },
+    {
+      "arquivo": "geracao_v1.py",
+      "sha256": "2f836e05c818106e97c6e2f789911012bda286c10324f36e663bd783937ad60e"
+    }
+  ],
+  "depois": {
+    "sha256_agregado": "7a0c2cecce391b936178b77d52e577e67b57fc5fe0d560066da7652a50de5c35",
+    "quantidade_arquivos": 221
+  },
+  "V1_integralmente_preservada": true,
+  "copias_identicas": true
+}

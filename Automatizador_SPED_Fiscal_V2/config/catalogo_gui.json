@@ -1,0 +1,458 @@
+{
+  "fonte": "diagnostico Java de 13/11/2026 e oito relatorios aprovados",
+  "relatorios": [
+    {
+      "id": "documentos_entradas",
+      "exibir_subrelatorios": false,
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Relatórios de Registros Fiscais",
+        "Documentos",
+        "Entradas de Mercadorias e Aquisição de Serviços"
+      ],
+      "nome_pdf": "Registros Fiscais dos documentos de entradas de mercadorias e aquisição de serviços.pdf",
+      "marcadores": {
+        "tipo": [
+          "registro de entradas",
+          "entradas de mercadorias",
+          "documentos de entradas",
+          "entradas e aquisicoes"
+        ]
+      },
+      "nome_original": "Entradas de Mercadorias e Aquisição de Serviços",
+      "suporte": "aprovado",
+      "opcional": false
+    },
+    {
+      "id": "documentos_saidas",
+      "exibir_subrelatorios": false,
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Relatórios de Registros Fiscais",
+        "Documentos",
+        "Saídas de Mercadorias e Prestação de Serviços"
+      ],
+      "nome_pdf": "Registros Fiscais dos documentos de saídas de mercadorias e prestação de serviços.pdf",
+      "marcadores": {
+        "tipo": [
+          "registro de saidas",
+          "saidas de mercadorias",
+          "documentos de saidas"
+        ]
+      },
+      "nome_original": "Saídas de Mercadorias e Prestação de Serviços",
+      "suporte": "aprovado",
+      "opcional": false
+    },
+    {
+      "id": "operacoes_proprias",
+      "exibir_subrelatorios": true,
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Relatórios de Registros Fiscais",
+        "Apuração do ICMS",
+        "Operações Próprias"
+      ],
+      "nome_pdf": "Registros Fiscais da Apuração do ICMS_Operações Próprias.pdf",
+      "marcadores": {
+        "tipo": [
+          "operacoes proprias"
+        ],
+        "apuracao": [
+          "apuracao do icms"
+        ]
+      },
+      "nome_original": "Operações Próprias",
+      "suporte": "aprovado",
+      "opcional": false
+    },
+    {
+      "id": "operacoes_st",
+      "exibir_subrelatorios": true,
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Relatórios de Registros Fiscais",
+        "Apuração do ICMS",
+        "Substituição Tributária"
+      ],
+      "nome_pdf": "Registros Fiscais da Apuração do ICMS_Operações ST.pdf",
+      "marcadores": {
+        "tipo": [
+          "substituicao tributaria",
+          "operacoes st"
+        ],
+        "apuracao": [
+          "apuracao do icms"
+        ]
+      },
+      "nome_original": "Substituição Tributária",
+      "suporte": "aprovado",
+      "opcional": false
+    },
+    {
+      "id": "ciap",
+      "exibir_subrelatorios": false,
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "ICMS - Ativo Permanente - CIAP"
+      ],
+      "nome_pdf": "Registros Fiscais de Controle de Créditos de ICMS do Ativo Permanente - CIAP.pdf",
+      "marcadores": {
+        "tipo": [
+          "ciap",
+          "ativo permanente"
+        ]
+      },
+      "nome_original": "ICMS - Ativo Permanente - CIAP",
+      "suporte": "aprovado",
+      "opcional": false
+    },
+    {
+      "id": "controle_creditos_fiscais",
+      "exibir_subrelatorios": false,
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Outras Informações",
+        "Controle de Créditos Fiscais - ICMS"
+      ],
+      "nome_pdf": "Registro de Controle de Créditos Fiscais.pdf",
+      "opcional": false,
+      "quando_indisponivel": "ignorar_sem_interromper_lote",
+      "habilitado": true,
+      "marcadores": {
+        "tipo": [
+          "controle de creditos fiscais"
+        ]
+      },
+      "nome_original": "Controle de Créditos Fiscais - ICMS",
+      "suporte": "aprovado"
+    },
+    {
+      "id": "pagamentos_eletronicos",
+      "exibir_subrelatorios": false,
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Outras Informações",
+        "Operações com Instrumentos de Pagamentos Eletrônicos"
+      ],
+      "nome_pdf": "Operações com instrumentos de Pagamentos Eletrônicos.pdf",
+      "marcadores": {
+        "tipo": [
+          "operacoes com instrumentos de pagamentos eletronicos"
+        ]
+      },
+      "nome_original": "Operações com Instrumentos de Pagamentos Eletrônicos",
+      "suporte": "aprovado",
+      "opcional": false
+    },
+    {
+      "id": "recibo",
+      "exibir_subrelatorios": false,
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Recibo de Transmissão"
+      ],
+      "nome_pdf": "Recibo.pdf",
+      "marcadores": {
+        "tipo": [
+          "recibo de transmissao"
+        ]
+      },
+      "timeout_abertura_segundos": 5,
+      "nome_original": "Recibo de Transmissão",
+      "suporte": "aprovado",
+      "opcional": false
+    },
+    {
+      "id": "pva_d620550a892656a8",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Dados da Escrituração"
+      ],
+      "nome_original": "Dados da Escrituração",
+      "nome_pdf": "Dados da Escrituração.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "especial_nao_suportado",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_8c08fcc9f4699cac",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Relatórios de Registros Fiscais",
+        "Apuração do ICMS",
+        "Outras Apurações"
+      ],
+      "nome_original": "Outras Apurações",
+      "nome_pdf": "Outras Apurações.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_b95bf97768b177de",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Relatórios de Registros Fiscais",
+        "Ressarcimento, restituição e estorno"
+      ],
+      "nome_original": "Ressarcimento, restituição e estorno",
+      "nome_pdf": "Ressarcimento, restituição e estorno.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_265122e46ab66921",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Apuração do IPI",
+        "Consolidação dos Valores de IPI"
+      ],
+      "nome_original": "Consolidação dos Valores de IPI",
+      "nome_pdf": "Consolidação dos Valores de IPI.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_fbe72c7c0f06abaf",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Apuração do IPI",
+        "Apuração do IPI"
+      ],
+      "nome_original": "Apuração do IPI",
+      "nome_pdf": "Apuração do IPI.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_9439788e7c8d56a4",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Resumo  Convênio ICMS 115/2003"
+      ],
+      "nome_original": "Resumo  Convênio ICMS 115/2003",
+      "nome_pdf": "Resumo  Convênio ICMS 115_2003.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_c3657a329458c81b",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Inventário Físico",
+        "Totais do Inventário"
+      ],
+      "nome_original": "Totais do Inventário",
+      "nome_pdf": "Totais do Inventário.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_2a92edccf24d929f",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Produção e Estoque - RCPE",
+        "Produção e Estoque"
+      ],
+      "nome_original": "Produção e Estoque",
+      "nome_pdf": "Produção e Estoque.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_c92810588331006f",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Produção e Estoque - RCPE",
+        "Produção e Respectivo Consumo"
+      ],
+      "nome_original": "Produção e Respectivo Consumo",
+      "nome_pdf": "Produção e Respectivo Consumo.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_fe0c07a9413894bb",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Produção e Estoque - RCPE",
+        "Movimentação Interna"
+      ],
+      "nome_original": "Movimentação Interna",
+      "nome_pdf": "Movimentação Interna.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_5301ac1a015b4efc",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Produção e Estoque - RCPE",
+        "Desmontagem de Mercadorias"
+      ],
+      "nome_original": "Desmontagem de Mercadorias",
+      "nome_pdf": "Desmontagem de Mercadorias.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_f60b14dbd9fcd744",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Produção e Estoque - RCPE",
+        "Reprocessamento"
+      ],
+      "nome_original": "Reprocessamento",
+      "nome_pdf": "Reprocessamento.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_8a3a83d1764c3726",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Produção e Estoque - RCPE",
+        "Correção de Apontamento"
+      ],
+      "nome_original": "Correção de Apontamento",
+      "nome_pdf": "Correção de Apontamento.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_5e88198e57dc273f",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Produção e Estoque - RCPE",
+        "Correção de Apontamento - Estoque"
+      ],
+      "nome_original": "Correção de Apontamento - Estoque",
+      "nome_pdf": "Correção de Apontamento - Estoque.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_8f91f18755b6484e",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Outras Informações",
+        "Registro de Informações Sobre Exportação"
+      ],
+      "nome_original": "Registro de Informações Sobre Exportação",
+      "nome_pdf": "Registro de Informações Sobre Exportação.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_fe46aba88e5dc7af",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Outras Informações",
+        "Movimentação de Combustíveis"
+      ],
+      "nome_original": "Movimentação de Combustíveis",
+      "nome_pdf": "Movimentação de Combustíveis.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_c03ccdcf064d7201",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Outras Informações",
+        "Bombas"
+      ],
+      "nome_original": "Bombas",
+      "nome_pdf": "Bombas.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_e1a12eae54e89388",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Outras Informações",
+        "Informação Sobre Valores Agregados"
+      ],
+      "nome_original": "Informação Sobre Valores Agregados",
+      "nome_pdf": "Informação Sobre Valores Agregados.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_db6ee1947650069b",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Outras Informações",
+        "Nota Fiscal/Conta de Energia Elétrica - Operações Interestaduais"
+      ],
+      "nome_original": "Nota Fiscal/Conta de Energia Elétrica - Operações Interestaduais",
+      "nome_pdf": "Nota Fiscal_Conta de Energia Elétrica - Operações Interestaduais.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_23006be264346170",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Relatório de Pendências"
+      ],
+      "nome_original": "Relatório de Pendências",
+      "nome_pdf": "Relatório de Pendências.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "generico",
+      "marcadores": {}
+    },
+    {
+      "id": "pva_a10159592241d4f7",
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Assinatura"
+      ],
+      "nome_original": "Assinatura",
+      "nome_pdf": "Assinatura.pdf",
+      "exibir_subrelatorios": false,
+      "opcional": false,
+      "suporte": "especial_nao_suportado",
+      "marcadores": {}
+    }
+  ]
+}

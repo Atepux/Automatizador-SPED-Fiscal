@@ -1,0 +1,15 @@
+{
+  "status": "abertura_e_rodape_aprovados_integracao_geracao_validada_offline",
+  "menu": ["Escrituração Fiscal", "Abrir"],
+  "fechamento_normal": ["Escrituração Fiscal", "Fechar"],
+  "janela": {"titulo": "Abrir Escrituração", "classe_windows": "SunAwtDialog"},
+  "lista": {"papel_java": "table", "colunas": ["Contribuinte", "UF", "CPF/CNPJ", "Inscrição Estadual", "Data Inicial", "Data Final", "Descritor", "Finalidade do Arquivo", "Estado"]},
+  "campos_identidade": ["CPF/CNPJ", "Data Inicial", "Data Final"],
+  "campos_desambiguacao": ["Inscrição Estadual", "Finalidade do Arquivo", "Descritor"],
+  "confirmacao": {"nome": "Ok", "papel_java": "push button"},
+  "cancelamento": {"nome": "Cancelar", "papel_java": "push button"},
+  "pesquisa_filtro_editavel_identificado": false,
+  "selecao_de_linha_testada": true,
+  "abertura_de_escrituracao_testada": true,
+  "confirmacao_identidade_ativa": "rodape_java_cnpj_e_periodo_correspondentes"
+}

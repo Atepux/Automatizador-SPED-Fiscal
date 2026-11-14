@@ -1,0 +1,8 @@
+{
+  "subrelatorios_obrigatorios": ["operacoes_proprias", "operacoes_st"],
+  "relatorios_excluidos": ["DIFAL RJ", "DIFAL SP"],
+  "proibir_geracao_difal": true,
+  "outros_relatorios_marcar_subrelatorios": false,
+  "salvamento_com_subrelatorios_validado": true,
+  "criterio_subrelatorios": "controle encontrado, is_checked true e Salvar disponivel; sem espera de estabilidade de conteudo"
+}

@@ -1,0 +1,3 @@
+# Preservar os bytes e hashes das rotinas aprovadas, inclusive quebras de linha.
+* -text
+*.py diff=python

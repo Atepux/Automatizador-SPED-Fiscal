@@ -1,0 +1,17 @@
+{
+  "scripts/ativar_operacoes_proprias.py": {
+    "origem_sha256": "b3f23d6f267fd33983acd5876b81b243370c7de6ced52c236c94ebb582f1aa72",
+    "v2_sha256": "40aa081f998f62a01e50470fad08ee6dd81d0f602c5775d2a9b0c91ae7fc09b7",
+    "motivo": "V2 aguarda janelas de carregamento dentro do prazo existente, sem interagir nem repetir cliques. V1 permanece intacta. Resolução explícita dos recursos no EXE; lógica fiscal preservada. Suporte a monitores com coordenadas negativas e acompanhamento de auxiliares para retomada segura."
+  },
+  "scripts/poc_ponta_a_ponta.py": {
+    "origem_sha256": "b3f09e80818889f42eff49d4f01246ae638c34dfd28053dc0164db29bf48aef4",
+    "v2_sha256": "9fd9e10c3b8704f7518c01dfa113bc32a4d8c9b512934bd008d54f0a3ff28d62",
+    "motivo": "Despacho de auxiliares compatível com EXE; lógica aprovada de relatórios inalterada. Resolução explícita dos recursos no EXE; lógica fiscal preservada. Suporte a monitores com coordenadas negativas e acompanhamento de auxiliares para retomada segura."
+  },
+  "scripts/modal_concorrente.py": {
+    "origem_sha256": "d7fd455d952986e4ae5045dcc66a402d9503a225365e284756b0bda5ab9b4d06",
+    "v2_sha256": "f38458c92256e7de0412eb3bc3d4cb67c35bb243b90d45a1230ef7dbd485947f",
+    "motivo": " Resolução explícita dos recursos no EXE; lógica fiscal preservada. Suporte a monitores com coordenadas negativas e acompanhamento de auxiliares para retomada segura."
+  }
+}

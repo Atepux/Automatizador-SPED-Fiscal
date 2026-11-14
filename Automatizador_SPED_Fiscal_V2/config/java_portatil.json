@@ -1,0 +1,21 @@
+{
+  "availability_type": "CA",
+  "distro_version": [
+    8,
+    98,
+    0,
+    111
+  ],
+  "download_url": "https://cdn.azul.com/zulu/bin/zulu8.98.0.111-ca-jre8.0.512-win_i686.zip",
+  "java_version": [
+    8,
+    0,
+    512
+  ],
+  "latest": true,
+  "name": "zulu8.98.0.111-ca-jre8.0.512-win_i686.zip",
+  "openjdk_build_number": 9,
+  "package_uuid": "e08242ce-57eb-4b9f-857c-16f67fa5ab54",
+  "product": "zulu",
+  "sha256_hash": "f437f56841685619bdef579571d9f2f05fad905f40e13a0210f9f2dc6382428d"
+}

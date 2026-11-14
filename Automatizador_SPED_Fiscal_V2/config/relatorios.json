@@ -1,0 +1,143 @@
+{
+  "relatorios": [
+    {
+      "id": "documentos_entradas",
+      "exibir_subrelatorios": false,
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Relatórios de Registros Fiscais",
+        "Documentos",
+        "Entradas de Mercadorias e Aquisição de Serviços"
+      ],
+      "nome_pdf": "Registros Fiscais dos documentos de entradas de mercadorias e aquisição de serviços.pdf",
+      "marcadores": {
+        "tipo": [
+          "registro de entradas",
+          "entradas de mercadorias",
+          "documentos de entradas",
+          "entradas e aquisicoes"
+        ]
+      }
+    },
+    {
+      "id": "documentos_saidas",
+      "exibir_subrelatorios": false,
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Relatórios de Registros Fiscais",
+        "Documentos",
+        "Saídas de Mercadorias e Prestação de Serviços"
+      ],
+      "nome_pdf": "Registros Fiscais dos documentos de saídas de mercadorias e prestação de serviços.pdf",
+      "marcadores": {
+        "tipo": [
+          "registro de saidas",
+          "saidas de mercadorias",
+          "documentos de saidas"
+        ]
+      }
+    },
+    {
+      "id": "operacoes_proprias",
+      "exibir_subrelatorios": true,
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Relatórios de Registros Fiscais",
+        "Apuração do ICMS",
+        "Operações Próprias"
+      ],
+      "nome_pdf": "Registros Fiscais da Apuração do ICMS_Operações Próprias.pdf",
+      "marcadores": {
+        "tipo": [
+          "operacoes proprias"
+        ],
+        "apuracao": [
+          "apuracao do icms"
+        ]
+      }
+    },
+    {
+      "id": "operacoes_st",
+      "exibir_subrelatorios": true,
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Relatórios de Registros Fiscais",
+        "Apuração do ICMS",
+        "Substituição Tributária"
+      ],
+      "nome_pdf": "Registros Fiscais da Apuração do ICMS_Operações ST.pdf",
+      "marcadores": {
+        "tipo": [
+          "substituicao tributaria",
+          "operacoes st"
+        ],
+        "apuracao": [
+          "apuracao do icms"
+        ]
+      }
+    },
+    {
+      "id": "ciap",
+      "exibir_subrelatorios": false,
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "ICMS - Ativo Permanente - CIAP"
+      ],
+      "nome_pdf": "Registros Fiscais de Controle de Créditos de ICMS do Ativo Permanente - CIAP.pdf",
+      "marcadores": {
+        "tipo": [
+          "ciap",
+          "ativo permanente"
+        ]
+      }
+    },
+    {
+      "id": "controle_creditos_fiscais",
+      "exibir_subrelatorios": false,
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Outras Informações",
+        "Controle de Créditos Fiscais - ICMS"
+      ],
+      "nome_pdf": "Registro de Controle de Créditos Fiscais.pdf",
+      "opcional": true,
+      "quando_indisponivel": "ignorar_sem_interromper_lote",
+      "habilitado": true,
+      "marcadores": {
+        "tipo": [
+          "controle de creditos fiscais"
+        ]
+      }
+    },
+    {
+      "id": "pagamentos_eletronicos",
+      "exibir_subrelatorios": false,
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Outras Informações",
+        "Operações com Instrumentos de Pagamentos Eletrônicos"
+      ],
+      "nome_pdf": "Operações com instrumentos de Pagamentos Eletrônicos.pdf",
+      "marcadores": {
+        "tipo": [
+          "operacoes com instrumentos de pagamentos eletronicos"
+        ]
+      }
+    },
+    {
+      "id": "recibo",
+      "exibir_subrelatorios": false,
+      "caminho_pva": [
+        "Escrituração Fiscal",
+        "Recibo de Transmissão"
+      ],
+      "nome_pdf": "Recibo.pdf",
+      "marcadores": {
+        "tipo": [
+          "recibo de transmissao"
+        ]
+      },
+      "timeout_abertura_segundos": 5
+    }
+  ]
+}

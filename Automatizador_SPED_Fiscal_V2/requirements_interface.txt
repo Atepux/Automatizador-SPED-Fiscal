@@ -1,0 +1,4 @@
+# Complementos instalados com autorização para a interface V2.
+# Python, pyjab, pywin32 e PyMuPDF são os mesmos do ambiente já aprovado.
+openpyxl==3.1.5
+xlrd==2.0.2

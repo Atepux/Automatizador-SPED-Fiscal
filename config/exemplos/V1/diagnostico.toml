@@ -1,0 +1,5 @@
+titulo_prefixo = "Sped Fiscal - EFD ICMS/IPI"
+bridge_dll = "" # descoberta automática; sem caminho pessoal
+max_profundidade = 8
+max_controles = 250
+espera_apos_abrir_relatorio_segundos = 2
