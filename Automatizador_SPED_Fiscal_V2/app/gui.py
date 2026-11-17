@@ -549,4 +549,10 @@ class App:
 
 
 def main():
-    root=tk.Tk();app=App(root);root.after(700,app.offer_environment);root.mainloop()
+    from .runtime import RESOURCES
+    root=tk.Tk()
+    icon=RESOURCES/'recursos/Automatizador_SPED_Fiscal.ico'
+    if icon.is_file():
+        try:root.iconbitmap(default=str(icon))
+        except tk.TclError:pass
+    app=App(root);root.after(700,app.offer_environment);root.mainloop()

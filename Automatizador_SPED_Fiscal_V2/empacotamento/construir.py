@@ -50,6 +50,8 @@ def main():
             if (BASE/name).exists():z.write(BASE/name,name)
         for file in (resources/'config').glob('*'):z.write(file,'config/'+file.name)
         for file in (BASE/'empacotamento').glob('*.py'):z.write(file,'empacotamento/'+file.name)
+        icon_source=BASE/'recursos/Automatizador_SPED_Fiscal.ico'
+        if icon_source.is_file():z.write(icon_source,'recursos/'+icon_source.name)
     dist=metadata.distribution('PyMuPDF');copying=dist.locate_file('pymupdf-1.26.7.dist-info/COPYING')
     shutil.copy2(copying,sources/'AGPL-3.0.txt')
     # Fontes completos de compilacao dos dois componentes AGPL, sem amostras
@@ -89,9 +91,12 @@ def main():
         'Depois: python empacotamento/construir.py\n'
         'Teste: python -m unittest discover -s tests -q\n'
         'A compilação não usa dados/ logs/ saida/ nem acessa o PVA.\n',encoding='utf-8')
+    icon=BASE/'recursos/Automatizador_SPED_Fiscal.ico'
+    icon_args=['--icon',str(icon)] if icon.is_file() else []
+    icon_data=['--add-data',str(icon)+';recursos'] if icon.is_file() else []
     runtime_dist=WORK/'runtime_dist'
     args=['--noconfirm','--clean','--windowed','--onedir','--noupx','--name','SpedFiscal',
-          '--distpath',str(runtime_dist),'--workpath',str(WORK/'work_app'),'--specpath',str(WORK),
+          *icon_args,*icon_data,'--distpath',str(runtime_dist),'--workpath',str(WORK/'work_app'),'--specpath',str(WORK),
           '--paths',str(BASE),'--paths',str(BASE/'scripts'),
           '--add-data',str(resources/'config')+';config','--add-data',str(resources/'scripts')+';scripts',
           '--add-data',str(BASE/'app/pva_worker.py')+';app','--add-data',str(BASE/'app/offline_worker.py')+';app',
@@ -113,7 +118,7 @@ def main():
     (loader/'pacote.json').write_text(json.dumps({'versao':VERSION,'sha256':digest}),encoding='utf-8')
     output_name='Automatizador_SPED_Fiscal_V2_'+VERSION
     run(['--noconfirm','--clean','--windowed','--onefile','--noupx','--name',output_name,
-        '--distpath',str(RELEASE),'--workpath',str(WORK/'work_loader'),'--specpath',str(WORK),
+        *icon_args,'--distpath',str(RELEASE),'--workpath',str(WORK/'work_loader'),'--specpath',str(WORK),
         '--add-data',str(loader/'programa.zip')+';.','--add-data',str(loader/'pacote.json')+';.',
         str(BASE/'empacotamento/launcher.py')])
     exe=RELEASE/(output_name+'.exe')
