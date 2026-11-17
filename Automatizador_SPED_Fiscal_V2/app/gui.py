@@ -10,6 +10,7 @@ import tkinter as tk
 from tkinter import font as tkfont
 from tkinter import ttk,filedialog,messagebox,simpledialog
 
+from .branding import configure_taskbar,apply_icon,create_toplevel
 from .catalog import BASE,load_catalog,discovered
 from .domain import DEFAULTS,period,validate_settings,redact,format_competence
 from .storage import Store
@@ -24,7 +25,7 @@ class Tooltip:
     def enter(self,event=None): self.timer=self.widget.after(450,self.show)
     def show(self):
         self.timer=None
-        self.window=tk.Toplevel(self.widget);self.window.overrideredirect(True)
+        self.window=create_toplevel(self.widget);self.window.overrideredirect(True)
         self.window.geometry(f'+{self.widget.winfo_rootx()+20}+{self.widget.winfo_rooty()+20}')
         ttk.Label(self.window,text=self.text,justify='left',padding=12,relief='solid',wraplength=440).pack()
     def leave(self,event=None):
@@ -34,6 +35,7 @@ class Tooltip:
 
 class App:
     def __init__(self,root,store=None):
+        apply_icon(root)
         self.root=root;self.store=store or Store(BASE/'dados/empresas.sqlite3',load_catalog())
         self.messages=queue.Queue();self.stop=threading.Event();self.busy=False;self.started=None
         self.selected=set();self.statuses={};self.rows=[];self.current_company=None;self.editing_report=None;self.dirty=False
@@ -107,7 +109,7 @@ class App:
         if self.busy:return
         from .environment import check
         state=check()
-        window=tk.Toplevel(self.root);window.title('Acesso ao PVA');window.transient(self.root)
+        window=create_toplevel(self.root);window.title('Acesso ao PVA');window.transient(self.root)
         window.geometry('590x330');window.resizable(False,False)
         frame=ttk.Frame(window,padding=24);frame.pack(fill='both',expand=True)
         ttk.Label(frame,text='Preparação do acesso ao PVA',font=('Segoe UI',16,'bold')).pack(anchor='w',pady=(0,15))
@@ -266,7 +268,7 @@ class App:
 
     def company_form(self,old=None):
         if self.busy:return
-        window=tk.Toplevel(self.root);window.title('Editar empresa' if old else 'Cadastrar empresa');window.transient(self.root);window.grab_set()
+        window=create_toplevel(self.root);window.title('Editar empresa' if old else 'Cadastrar empresa');window.transient(self.root);window.grab_set()
         frame=ttk.Frame(window,padding=18);frame.pack(fill='both',expand=True)
         number=tk.StringVar(value=old['cnpj'] if old else '');name=tk.StringVar(value=old['name'] if old else '')
         for i,(label,value) in enumerate([('CNPJ',number),('Nome da empresa',name)]):
@@ -526,7 +528,7 @@ class App:
                 r=event['resultado'];text=f"Importadas: {r['importadas']}\nJá existentes: {r['existentes']}\nRejeitadas: {r['rejeitadas']}"
                 if r.get('erro_arquivo'):text+='\n'+r['erro_arquivo']
                 text+='\n'+'\n'.join(f"Linha {x['linha']}: {x['motivo']}" for x in r['rejeicoes'])
-                window=tk.Toplevel(self.root);window.title('Resultado da importação');window.geometry('650x430')
+                window=create_toplevel(self.root);window.title('Resultado da importação');window.geometry('650x430')
                 box=tk.Text(window,wrap='word');box.pack(fill='both',expand=True,padx=12,pady=12);box.insert('end',text);box.configure(state='disabled')
             else:messagebox.showinfo('Catálogo',f"Catálogo atualizado: {event['resultado']} itens.",parent=self.root)
             self.refresh()
@@ -549,10 +551,6 @@ class App:
 
 
 def main():
-    from .runtime import RESOURCES
+    configure_taskbar()
     root=tk.Tk()
-    icon=RESOURCES/'recursos/Automatizador_SPED_Fiscal.ico'
-    if icon.is_file():
-        try:root.iconbitmap(default=str(icon))
-        except tk.TclError:pass
     app=App(root);root.after(700,app.offer_environment);root.mainloop()

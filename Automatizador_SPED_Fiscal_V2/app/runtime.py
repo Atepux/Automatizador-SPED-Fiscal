@@ -7,7 +7,7 @@ import sys
 RESOURCES=Path(getattr(sys,'_MEIPASS',Path(__file__).resolve().parents[1]))
 DATA=(Path(os.environ.get('LOCALAPPDATA',Path.home()))/'AutomatizadorSPEDFiscal'/'V2'
       if getattr(sys,'frozen',False) else RESOURCES)
-APP_VERSION='2.3.2'
+APP_VERSION='2.3.3'
 
 
 def validate_resources():

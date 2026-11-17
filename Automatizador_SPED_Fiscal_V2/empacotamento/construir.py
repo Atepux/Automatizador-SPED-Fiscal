@@ -12,7 +12,7 @@ import time
 import zipfile
 
 BASE=Path(__file__).resolve().parents[1]
-VERSION='2.3.2'
+VERSION='2.3.3'
 STAMP=time.strftime('%Y%m%d_%H%M%S')
 WORK=BASE/'empacotamento'/('build_'+STAMP)
 RELEASE=BASE/'entrega'
@@ -50,7 +50,7 @@ def main():
             if (BASE/name).exists():z.write(BASE/name,name)
         for file in (resources/'config').glob('*'):z.write(file,'config/'+file.name)
         for file in (BASE/'empacotamento').glob('*.py'):z.write(file,'empacotamento/'+file.name)
-        icon_source=BASE/'recursos/Automatizador_SPED_Fiscal.ico'
+        icon_source=BASE/'recursos/SPED_Minimalista.ico'
         if icon_source.is_file():z.write(icon_source,'recursos/'+icon_source.name)
     dist=metadata.distribution('PyMuPDF');copying=dist.locate_file('pymupdf-1.26.7.dist-info/COPYING')
     shutil.copy2(copying,sources/'AGPL-3.0.txt')
@@ -91,8 +91,9 @@ def main():
         'Depois: python empacotamento/construir.py\n'
         'Teste: python -m unittest discover -s tests -q\n'
         'A compilação não usa dados/ logs/ saida/ nem acessa o PVA.\n',encoding='utf-8')
-    icon=BASE/'recursos/Automatizador_SPED_Fiscal.ico'
-    icon_args=['--icon',str(icon)] if icon.is_file() else []
+    icon=BASE/'recursos/SPED_Minimalista.ico'
+    if not icon.is_file():raise FileNotFoundError('Icone oficial ausente: '+str(icon))
+    icon_args=['--icon',str(icon)]
     icon_data=['--add-data',str(icon)+';recursos'] if icon.is_file() else []
     runtime_dist=WORK/'runtime_dist'
     args=['--noconfirm','--clean','--windowed','--onedir','--noupx','--name','SpedFiscal',

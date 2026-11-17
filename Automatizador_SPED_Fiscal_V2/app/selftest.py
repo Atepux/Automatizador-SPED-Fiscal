@@ -76,6 +76,12 @@ def main():
             try:
                 app=App(window,store);window.update_idletasks()
                 result['telas']=len(app.tabs.tabs())
+                import win32gui,win32con
+                from .branding import create_toplevel
+                secondary=create_toplevel(window);window.deiconify();window.update()
+                result['icone_janelas']=all(win32gui.SendMessage(win32gui.GetParent(w.winfo_id()),
+                    win32con.WM_GETICON,1,0) for w in (window,secondary))
+                secondary.destroy();window.withdraw()
             finally:window.destroy()
             doc=pymupdf.open();doc.new_page();doc.save(root/'teste.pdf');doc.close()
             with pymupdf.open(root/'teste.pdf') as doc:result['pdf']=doc.page_count==1
@@ -89,7 +95,7 @@ def main():
             result['saida_auxiliar']=(folder/'stdout.txt').read_text('utf-8').strip()
             result['erro_auxiliar']=(folder/'stderr.txt').read_text('utf-8').strip()
             result['simulacao']=simulate_companies(root)
-            result['sucesso']=(result['telas']==3 and result['pdf'] and p.returncode==0
+            result['sucesso']=(result['telas']==3 and result['icone_janelas'] and result['pdf'] and p.returncode==0
                               and result.get('auxiliar',{}).get('entrada_recebida') is True
                               and result['simulacao']['sucesso'] and result['simulacao']['pdfs']==16
                               and result['simulacao']['nova_tentativa_apos_falha'])
